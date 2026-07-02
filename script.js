@@ -20,8 +20,8 @@ function criarParticulas() {
 }
 
 // ===== Caça-níquel =====
-const SIMBOLOS = ['🍀', '💰', '⭐', '🎲', '💎'];
-const SIMBOLO_VENCEDOR = '🍀';
+const SIMBOLOS = ['🎀', '💗', '⭐', '💰', '💎'];
+const SIMBOLO_VENCEDOR = '🎀';
 const VOLTAS_BASE = 18;
 
 function montarTira(tiraEl) {
@@ -91,7 +91,7 @@ function iniciarSorteio() {
 // ===== Confete =====
 const canvas = document.getElementById('canvasConfete');
 const ctx = canvas.getContext('2d');
-const CORES_CONFETE = ['#d9b24c', '#ff6b57', '#1f6b48', '#f2dd9a', '#fdf8ec'];
+const CORES_CONFETE = ['#d9b24c', '#e8578f', '#b8477d', '#f2dd9a', '#fdf8f5'];
 
 function ajustarTamanhoCanvas() {
     canvas.width = window.innerWidth;
