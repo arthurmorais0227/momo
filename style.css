@@ -1,14 +1,14 @@
 /* ===== Tokens ===== */
 :root {
-    --verde-noite: #0e2f24;
-    --verde-profundo: #14432f;
-    --verde-medio: #1f6b48;
+    --rosa-escuro: #3d1226;
+    --rosa-profundo: #5c1a37;
+    --rosa-medio: #b8477d;
     --dourado: #d9b24c;
     --dourado-claro: #f2dd9a;
-    --creme: #fdf8ec;
-    --coral: #ff6b57;
-    --texto-escuro: #1c2b22;
-    --texto-suave: #5b6f62;
+    --creme: #fdf8f5;
+    --coral: #e8578f;
+    --texto-escuro: #3a1d2b;
+    --texto-suave: #8a5e72;
 
     --fonte-display: 'Fraunces', serif;
     --fonte-corpo: 'Inter', sans-serif;
@@ -25,8 +25,8 @@ body {
     font-family: var(--fonte-corpo);
     background:
         radial-gradient(circle at 20% 20%, rgba(217, 178, 76, 0.12), transparent 45%),
-        radial-gradient(circle at 80% 80%, rgba(31, 107, 72, 0.35), transparent 50%),
-        var(--verde-noite);
+        radial-gradient(circle at 80% 80%, rgba(184, 71, 125, 0.35), transparent 50%),
+        linear-gradient(180deg, var(--rosa-profundo), var(--rosa-escuro));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,9 +119,9 @@ body {
     font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--verde-medio);
-    background: rgba(31, 107, 72, 0.1);
-    border: 1px dashed var(--verde-medio);
+    color: var(--rosa-medio);
+    background: rgba(184, 71, 125, 0.1);
+    border: 1px dashed var(--rosa-medio);
     padding: 6px 14px;
     border-radius: 999px;
     margin-bottom: 22px;
@@ -151,7 +151,7 @@ body {
 .maquina {
     display: flex;
     gap: 10px;
-    background: var(--verde-noite);
+    background: var(--rosa-escuro);
     padding: 14px;
     border-radius: 16px;
     box-shadow: inset 0 4px 14px rgba(0, 0, 0, 0.5);
@@ -206,7 +206,7 @@ body {
 /* ===== Botão / alavanca ===== */
 .botaoSorte {
     position: relative;
-    background: linear-gradient(180deg, var(--coral), #e64d3a);
+    background: linear-gradient(180deg, var(--coral), #c2306a);
     color: white;
     border: none;
     padding: 16px 38px;
@@ -263,7 +263,7 @@ body {
     font-family: var(--fonte-corpo);
     font-weight: 700;
     font-size: 0.85rem;
-    color: var(--verde-noite);
+    color: var(--rosa-escuro);
     background: var(--dourado);
     padding: 6px 16px;
     border-radius: 999px;
