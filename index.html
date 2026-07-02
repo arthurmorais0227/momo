@@ -3,35 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sorteio Especial</title>
+    <title>Sorteio da Sorte 🍀</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;0,900;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <main class="container">
-        <section id="sorteio-box" class="box-card">
-            <h1>Sorteio da Sorte 🍀</h1>
-            <p>Clique no botão abaixo para tentar a sorte e ganhar um prêmio exclusivo.</p>
-            <button id="btn-sortear" onclick="iniciarSorteio()">Sortear Agora!</button>
-        </section>
+    <div class="fundoAnimado" id="fundoAnimado"></div>
 
-        <section id="convite-box" class="box-card hidden">
-            <div class="badge">🎉 Parabéns!</div>
-            <h2>Você ganhou o Sorteio!</h2>
-            <hr>
-            <div class="premio-info">
-                <h3>Prêmio:</h3>
-                <p class="destaque">🧺 Convite para treinar, comer e conversar!</p>
-                
-                <div class="detalhes">
-                    <p><strong>📍 Local:</strong> Academia (DNA), Cantinho Nobre e Banquinho (Jardim Centenário) - Valinhos</p>
-                    <p><strong>👤 Acompanhante:</strong> Arthur Morais - Intuito de conversar 🫡</p>
-                    <p><strong>📅 Dia:</strong> 18/04</p>
-                    <p><strong>🕒 Horário:</strong> 9:30h academia</p>
+    <canvas id="canvasConfete"></canvas>
+
+    <main class="palco">
+
+        <div class="bilhete" id="bilhete">
+
+            <!-- FRENTE: caça-níquel -->
+            <section class="face frente">
+                <span class="etiqueta">Bilhete Premiado Nº 007</span>
+
+                <h1 class="titulo">Sorteio da <em class="destaque">Sorte</em> 🍀</h1>
+                <p class="subtitulo">Puxe a alavanca e descubra o seu prêmio.</p>
+
+                <div class="maquina">
+                    <div class="rolo" id="rolo1">
+                        <div class="tira" id="tira1"></div>
+                    </div>
+                    <div class="rolo" id="rolo2">
+                        <div class="tira" id="tira2"></div>
+                    </div>
+                    <div class="rolo" id="rolo3">
+                        <div class="tira" id="tira3"></div>
+                    </div>
                 </div>
-            </div>
-            <p class="footer-msg">Espero você lá! ❤️</p>
-        </section>
+
+                <button id="btnSortear" class="botaoSorte">
+                    <span class="pinoAlavanca"></span>
+                    <span class="textoBotao">Puxar a Alavanca</span>
+                </button>
+            </section>
+
+            <!-- VERSO: convite -->
+            <section class="face verso">
+                <span class="selo">🏆 Prêmio máximo!</span>
+                <h2 class="tituloVerso">Você ganhou o sorteio!</h2>
+
+                <div class="linhaPerfurada" aria-hidden="true"></div>
+
+                <p class="premioNome">🧺 Treinar, comer e conversar</p>
+
+                <dl class="detalhes">
+                    <div class="linhaDetalhe">
+                        <dt>📍 Local</dt>
+                        <dd>Academia (DNA), Cantinho Nobre e Banquinho — Jardim Centenário, Valinhos</dd>
+                    </div>
+                    <div class="linhaDetalhe">
+                        <dt>👤 Com</dt>
+                        <dd>Arthur Morais — intuito de conversar 🫡</dd>
+                    </div>
+                    <div class="linhaDetalhe">
+                        <dt>📅 Dia</dt>
+                        <dd>18/04</dd>
+                    </div>
+                    <div class="linhaDetalhe">
+                        <dt>🕒 Horário</dt>
+                        <dd>9h30, na academia</dd>
+                    </div>
+                </dl>
+
+                <p class="rodapeVerso">Espero você lá! ❤️</p>
+            </section>
+
+        </div>
+
     </main>
 
     <script src="script.js"></script>
